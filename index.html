@@ -57,7 +57,7 @@
       </div>
 
       <div class="service">
-        <div class="container">
+        <div class="container" onmouseover="flipCard(this)">
           <p style="align-items:center ;">Mobile app</p>
           <img src="codelep img/img1.webp" alt="Avatar" class="image">
           <div class="overlay">
@@ -67,40 +67,38 @@
             </div>
           </div>
         </div>
-
-        <div class="container">
+        
+        <div class="container" onmouseover="flipCard(this)">
           <p>Websites</p>
           <img src="codelep img/img2.webp" alt="Avatar" class="image">
           <div class="overlay ">
             <div class="text">We build cross-platform mobile applications following the best industry standards and the
               latest trends to create seamless user experiences.
-
+        
               <p> <a href="#">GET A QUOTE</a></p>
             </div>
           </div>
         </div>
-
-
-        <div class="container">
+        
+        <div class="container" onmouseover="flipCard(this)">
           <p>Ul/UX Design</p>
           <img src="codelep img/img3.webp" alt="Avatar" class="image">
           <div class="overlay ">
             <div class="text">We build cross-platform mobile applications following the best industry standards and the
               latest trends to create seamless user experiences.
-
+        
               <p> <a href="#">GET A QUOTE</a></p>
             </div>
           </div>
         </div>
-
-
-        <div class="container">
+        
+        <div class="container" onmouseover="flipCard(this)">
           <p> Next-gen tech </p>
           <img src="codelep img/img4.webp" alt="Avatar" class="image">
           <div class="overlay ">
             <div class="text">We build cross-platform mobile applications following the best industry standards and the
               latest trends to create seamless user experiences.
-
+        
               <p> <a href="#">GET A QUOTE</a></p>
             </div>
           </div>
@@ -465,6 +463,10 @@
         $("#panel5").slideToggle("slow");
       });
     });
+
+    function flipCard(card) {
+      card.classList.toggle('flipped');
+    }
 
 
     var typed = new Typed(".auto-type", {
