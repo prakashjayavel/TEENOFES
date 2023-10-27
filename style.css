@@ -160,6 +160,7 @@ padding-left: 20px;
   perspective: 1000px;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  transform-origin: center;
 }
 
 .image {
@@ -188,13 +189,14 @@ padding-left: 20px;
   width: 100%;
   font-size: 10px;
   opacity: 0;
-  transition: .5s ease;
+  transition: opacity 0.5s;
   background: linear-gradient(45deg, #8481FA, #38C9C8);
   transform: rotateY(180deg);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  backface-visibility: hidden;
 }
 
 .container:hover {
